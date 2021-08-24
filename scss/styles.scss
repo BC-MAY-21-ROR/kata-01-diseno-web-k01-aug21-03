@@ -1,0 +1,180 @@
+$color-pink: rgb(255, 82, 191); 
+$color-pale-cyan: rgb(235, 251, 255);
+$color-dark-cyan: rgb(0, 37, 46);
+$color-grayish-blue: rgb(128, 141, 153);
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*Aplicar correctamente box-sizing*/
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//Mobile
+
+body{
+    background-image: url("/images/bg-hero-mobile.svg");
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.superior{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    h3{
+        float: right;
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: center;
+
+      }
+    img{
+        float: left;
+        width: 40%;
+        height: 30%;        
+    }
+}
+
+.main {
+    
+    padding: 0 5%;
+    
+    h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        width: 60%;
+        text-align: center;
+        background-color: $color-pink;
+        color: $color-pale-cyan;
+        border-radius: 50px;
+        margin: 20px auto 20px auto;
+    }
+    &__figure {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.card{
+    padding: 8% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 80px 15px;
+    border-radius: 5%;
+    background-color: white;
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        width: 60%;
+        text-align: center;
+        background-color: $color-pink;
+        color: $color-pale-cyan;
+        border-radius: 50px;
+        margin: 20px auto 20px auto;
+    }
+    &__figure {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    img{
+      width: 200px;
+      height: 100px;
+      
+            
+    }
+
+    h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    
+}
+
+
+
+    footer{
+        background-color: $color-dark-cyan;
+        color: $color-pale-cyan;
+        padding:100px 5%;
+        margin-top: -150px;
+        position: relative;
+        z-index: -1;
+        font-family: 'Open Sans', sans-serif;
+        
+
+        .info{
+            
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            
+
+            }
+            img {
+                align-self: flex-start;
+                height: 20px;
+            
+             }
+        .about{
+            p{
+            margin: 10px 0;
+            }
+        }
+        .redes{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+
+   
+}
+    
+
+
+

@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,56 +20,100 @@
   </style>
 </head>
 <body>
+  
+  <div class="container"><!--Container-->
 
-  Try It Free
+    <div class="superior">
+      <img src="images/logo.svg">
+      <h3>Try It Free</h3>
+    </div>
 
-  Build The Community Your Fans Will Love
+    <div class="main">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <a class="main__link" href="#">Get Started For Free</a>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      <figure class="main__figure">
+        <img src="images/illustration-mockups.svg">
+      </figure>
+    </div>
 
-  Get Started For Free
+    <div class="card">
+      <figure class="card__figure">
+        <img src="images/illustration-grow-together.svg">
+      </figure>
+      <h1>Grow Together</h1>
+      <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+         Think of the insightful conversations you miss out on with a feedback form. </p>
 
-  Grow Together
+    </div>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+    <div class="card">
+      <figure class="card__figure">
+        <img src="images/illustration-flowing-conversation.svg">
+      </figure>
+      <h1>Flowing Conversations</h1>
+      <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+        have just-in-time loading for a more natural flow.</p>
+    </div>
 
-  Flowing Conversations
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
+    <div class="card">
+      <figure class="card__figure">
+        <img src="images/illustration-your-users.svg">
+      </figure>
+      <h1>Your Users</h1>
+      <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+        This means, once signed in to your app, your users can start chatting immediately.</p>
+    </div>
 
-  Your Users
+    <div class="card">
+      <h1>Ready To Build Your Community?</h1>
+      <a class="card__link" href="#">Get Started For Free</a>
+    </div>
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
 
-  Ready To Build Your Community?
+    <footer class="footer">
 
-  Get Started For Free
+      
+      <img src="images/logo.svg">
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
+      <div class="info">
+        <img src="images/icon-location.svg">
+        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua</p>
+      </div>
 
-  +1-543-123-4567
-  example@huddle.com
+      <div class="info">
+        <img src="images/icon-phone.svg">
+        <p>+1-543-123-4567</p>
+      </div>
 
-  About Us
-  What We Do
-  FAQ
+      <div class="info">
+        <img src="images/icon-email.svg">
+        <p>example@huddle.com</p>
+      </div>
 
-  Career
-  Blog
-  Contact Us
+      <div class="about">
+        <p>About Us</p>
+        <p>What We Do</p>
+        <p>FAQ</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact Us</p>        
+      </div>
 
-  &copy; Copyright 2018 Huddle. All rights reserved.
+      <div class="redes">
+        <img src="images/facebook.svg">
+        <img src="images/twitter.svg">
+        <img src="images/instagram.svg">
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      </div>
+
+      &copy; Copyright 2018 Huddle. All rights reserved.
+    </footer>
+  </div> <!--Container-->
 </body>
 </html>
