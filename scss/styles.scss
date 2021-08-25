@@ -14,7 +14,6 @@ $color-grayish-blue: rgb(128, 141, 153);
 }
 
 //Mobile
-
 body{
     background-image: url("/images/bg-hero-mobile.svg");
 }
@@ -134,8 +133,6 @@ body{
     
 }
 
-
-
     footer{
         background-color: $color-dark-cyan;
         color: $color-pale-cyan;
@@ -173,8 +170,112 @@ body{
         }
 
    
-}
-    
+ }
 
+
+@media screen and (min-width:768px) {
+    $color-pink: rgb(255, 82, 191); 
+    $color-pale-cyan: rgb(235, 251, 255);
+    $color-dark-cyan: rgb(0, 37, 46);
+    $color-grayish-blue: rgb(128, 141, 153);
+    
+        body{
+            background-image: url("/images/bg-hero-desktop.svg");
+            
+        } 
+    
+        .superior{
+            img{
+                padding: 50px;
+                width: 200px; height: 50px;
+            }
+            h3{
+                margin-right: 50px;
+            }
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 150px;
+            h1{
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+            
+            a{
+                float: left;
+            }
+        }
+    
+        .card {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            h1{
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+        }
+
+        .card__figure{
+            img{
+                width: 100%; 
+                height: 100%;
+                max-width: 480px;
+            }
+            
+        }
+    
+        .card_reverse{
+            flex-direction: row;
+        }
+
+        .card_ready{
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            
+            h1{
+                text-align: center;
+            }
+            
+        }
+        
+
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            img {
+                grid-column: 1 / 2;
+            }
+            .info {
+                grid-column: 1 / 2;
+            }
+            .about {
+                
+                grid-column: 2 / 3;
+                margin: -100px 50px auto auto;
+            }
+            .about-2 {
+                grid-column: 3 / 4;
+            }
+            .redes {
+                margin-top: -100px;
+                grid-column: 4 / 5;
+            }
+            .copyright {
+                grid-column: 4 / 5;
+            }
+        }
+    
+    }
 
 

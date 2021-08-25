@@ -153,3 +153,122 @@ footer .redes {
           justify-content: center;
   gap: 20px;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("/images/bg-hero-desktop.svg");
+  }
+
+  .superior img {
+    padding: 50px;
+    width: 200px;
+    height: 50px;
+  }
+  .superior h3 {
+    margin-right: 50px;
+  }
+
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 150px;
+  }
+  .main h1 {
+    text-align: left;
+  }
+  .main p {
+    text-align: left;
+  }
+  .main a {
+    float: left;
+  }
+
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card h1 {
+    text-align: left;
+  }
+  .card p {
+    text-align: left;
+  }
+
+  .card__figure img {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+  }
+
+  .card_reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .card_ready {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card_ready h1 {
+    text-align: center;
+  }
+
+  .footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .footer .info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .footer .about {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin: -100px 50px auto auto;
+  }
+  .footer .about-2 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .footer .redes {
+    margin-top: -100px;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  .footer .copyright {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+}
